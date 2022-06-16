@@ -21,13 +21,16 @@ class DuckListItem extends StatelessWidget {
         style: Theme.of(context).textTheme.subtitle2,
       ),
       isThreeLine: true,
-      leading: ClipRRect(
-        borderRadius: BorderRadius.circular(8.0),
-        child: Image.asset(
-          duck.imagePath,
-          height: 80,
-          width: 80,
-          fit: BoxFit.cover,
+      leading: Hero(
+        tag: duck,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(8.0),
+          child: Image.asset(
+            duck.imagePath,
+            height: 80,
+            width: 80,
+            fit: BoxFit.cover,
+          ),
         ),
       ),
       onTap: () => context.push("/details", extra: duck),
