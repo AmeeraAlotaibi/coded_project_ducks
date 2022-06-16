@@ -36,7 +36,7 @@ class DuckModel {
     DuckModel(
         name: "Common Goldeneye",
         imagePath: "assets/images/common_goldeneye.jpeg",
-        description: DuckDescriptions.goldeneye,
+        description: DuckDescriptions.commonGoldeneye,
         size: "medium",
         genus: "Bucephala",
         species: "Clangula"),
