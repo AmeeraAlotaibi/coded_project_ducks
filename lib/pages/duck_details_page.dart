@@ -17,12 +17,9 @@ class DuckDetailsPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Hero(
-            tag: duck,
-            child: Image.asset(
-              duck.imagePath,
-              fit: BoxFit.fitWidth,
-            ),
+          Image.asset(
+            duck.imagePath,
+            fit: BoxFit.fitWidth,
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
