@@ -1,16 +1,10 @@
-# week_2
+# Ducks Project
 
-A new Flutter project.
+Ready to quack? Create an app to support spead awareness about ducks, and let the world know how pretty some ducks are.
 
-## Getting Started
+## Objectives
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Learn about ducks 🦆
+- Create a list page displaying pretty ducks
+- Create a details page display duck details
+- Allow user to navigate to details page from list page
