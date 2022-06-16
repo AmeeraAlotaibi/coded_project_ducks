@@ -31,18 +31,6 @@ class DuckDetailsPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
-                Chip(
-                  label: Text(
-                    "Size: ${duck.size}",
-                    style: Theme.of(context).textTheme.subtitle2,
-                  ),
-                ),
-                Text("Scientific Name",
-                    style: Theme.of(context).textTheme.headline6!.copyWith()),
-                SizedBox(height: 8),
-                Text(duck.scientificName,
-                    style: Theme.of(context).textTheme.bodyMedium),
-                SizedBox(height: 14),
                 Text("Description",
                     style: Theme.of(context).textTheme.headline6!.copyWith()),
                 SizedBox(height: 8),
