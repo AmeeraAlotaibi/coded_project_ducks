@@ -9,7 +9,10 @@ class DuckDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(duck.name)),
+      appBar: AppBar(
+          title: Text(
+        duck.name,
+      )),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -21,13 +24,25 @@ class DuckDetailsPage extends StatelessWidget {
               fit: BoxFit.fitWidth,
             ),
           ),
-          SizedBox(height: 16),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: [
+                Chip(
+                  label: Text(
+                    "Size: ${duck.size}",
+                    style: Theme.of(context).textTheme.subtitle2,
+                  ),
+                ),
+                Text("Scientific Name",
+                    style: Theme.of(context).textTheme.headline6!.copyWith()),
+                SizedBox(height: 8),
+                Text(duck.scientificName,
+                    style: Theme.of(context).textTheme.bodyMedium),
+                SizedBox(height: 14),
                 Text("Description",
                     style: Theme.of(context).textTheme.headline6!.copyWith()),
                 SizedBox(height: 8),
